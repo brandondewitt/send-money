@@ -1,0 +1,22 @@
+{
+  "name": "send-money",
+  "version": "1.0.0",
+  "description": "App to send money to people",
+  "author": "Brandon DeWitt <brandondewitt1@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently 'node api/server.js' 'node app/server.js'",
+    "start:dev": "concurrently 'nodemon api/server.js' 'nodemon app/server.js'",
+    "lint": "./node_modules/eslint/bin/eslint.js ."
+  },
+  "dependencies": {
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "eslint": "^4.14.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.4.0",
+    "prettier": "^1.9.2"
+  }
+}
